@@ -1,0 +1,374 @@
+@font-face {
+    font-family: Metropolis;
+    src: url(Fonts/Metropolis-Regular.otf);
+  }
+
+ @font-face {
+    font-family: MetropolisBold;
+    src: url(Fonts/Metropolis-ExtraBold.otf);    
+ } 
+
+ @font-face {
+    font-family: MetropolisItalic;
+    src: url(Fonts/Metropolis-RegularItalic.otf);
+ }
+ @font-face {
+    font-family: MetropolisThin;
+    src: url(Fonts/Metropolis-Thin.otf);
+ }
+ @font-face {
+
+    font-family: MetropolisThinIalic;
+    src: url(Fonts/Metropolis-ThinItalic.otf);
+ }
+
+ @font-face {
+
+    font-family: MetropolisMedium;
+    src: url(Fonts/Metropolis-Medium.otf);
+ }
+
+ @font-face {
+
+    font-family: MetropolisBlack;
+    src: url(Fonts/Metropolis-Black.otf);
+ }
+
+
+ @font-face {
+
+    font-family: MetropolisSemiBold;
+    src: url(Fonts/Metropolis-SemiBold.otf);
+ }
+
+html, body{ 
+	margin: 0; 
+	padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+h1{
+    color: white;
+    font-family: transducer-extended,sans-serif;
+    font-size: 33px;
+    line-height: 70px;
+}
+
+/* Subhead */
+h2{
+    color: white;
+    font-family: t26-carbon, monospace;
+    font-size: 40px;
+    margin-left: 40px;
+    line-height: 30px;
+}
+
+
+/* Body Copy */
+p{
+    color: white;
+    font-size: 17px;
+    font-family: Metropolis;
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-left: 40px;
+}
+
+/* Link */
+a{
+    color: rgb(0, 162, 255);
+    font-family: MetropolisBlack;
+   text-decoration: none; 
+}
+
+/* Placeholder */
+#videoContainer{
+    background-color: rgb(129, 129, 129);
+    width: 100%;
+    height: 1080px;
+}
+
+#InfoContainer{
+    display: flex;
+    background-color: rgb(0, 251, 255);
+    width: 100%;
+    height: 100%;
+}
+
+#LeftCol{
+    background-color: red;
+    width: 10%;
+    height: 2000px;
+}
+
+#CenterCol{
+    display: flex;
+    flex-direction: column;
+    /* background-color: purple; */
+    background: rgb(32,32,32);
+    background: linear-gradient(155deg, rgba(32,32,32,1) 17%, rgb(45, 78, 82) 100%); 
+    width: 80%;
+    height: auto;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+#RightCol{
+    background-color: blue;
+    width: 10%;
+    height: 2000px;
+}
+
+.infoBlock{
+    display: flex;
+    width: 90%;
+    height: auto;    
+}
+
+.textBlock{
+    margin-right: auto;
+    width: 45%;
+    height: auto;
+}
+
+#InteractiveBlock1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+    width: 40%;
+    height: auto;
+}
+
+#InteractiveBlock2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+    width: 40%;
+    height: auto;
+}
+
+#Footer{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 10rem;
+}
+
+#videoDivider{
+	margin: 0px;
+	padding: 0px;
+    background-image: url("../Images/VideoDividerBG.png");
+    background-size: contain;
+	height: 50px;
+}
+
+#bottomNav{
+    background-image: url("../Images/NavBarBG.png");
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 5.52%; 
+    /* (img-height / img-width * container-width) */
+    /* (853 / 1280 * 100) */
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    /* padding-left: 20rem; */
+    /* padding-right: 20rem; */
+}
+
+#bottomNav > a{
+    padding-bottom: 1.5%;
+    color: rgb(255, 255, 255);
+    font-family: t26-carbon, monospace;
+    font-size: 2vw;
+}
+
+#bottomNav >a:hover{
+    text-shadow: 0px 0px 20px rgb(194, 211, 255);
+}
+
+#BezierDemo1{
+    height: 80%;
+    width: 80%;
+}
+
+
+#BezierDemo2{
+    height: 80%;
+    width: 80%;
+}
+
+
+video#bgVideo {
+    /* bottom: 0; */
+    vertical-align: top;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;    
+    }
+
+
+.brmed{
+    display: block;
+    margin-bottom: .9em;
+}
+
+
+/* VECTOR SPECIFIC CSS */
+/* VECTOR SPECIFIC CSS */
+/* VECTOR SPECIFIC CSS */
+#slider-container{
+    /* background-image: url(Images/ImageCompareBorder2.png); */
+    background-image: url("VectorSite/Images/ImageCompareBorder2.png");
+    background-size: 32rem;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    
+}
+
+.img-comp-img {
+    background-size: cover;
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 400px;
+    background-image: url("VectorSite/Images/ImageSlider.png");
+    opacity: 0.9;
+  }
+
+  .img-comp-container {
+    /* display: flex; */
+    position: relative;
+    height: 400px; /*should be the same height as the images*/
+    
+}
+
+.explainerText{
+    font-family: MetropolisThin;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 0;
+    margin-left: 0px;
+    line-height: 24px;
+}
+
+#movingShapeContainer{
+    
+    padding: 20px;
+    background-image: url("VectorSite/Images/MovingSquareBorder.png");
+    background-repeat: no-repeat;
+    background-size: 34rem;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#MovingShape{
+    -webkit-box-shadow:0 0 20px rgb(255, 255, 255); 
+    -moz-box-shadow: 0 0 20px rgb(255, 255, 255); 
+    box-shadow:0 0 20px rgb(255, 255, 255,100);
+    cursor: none;
+    height: 300px;
+    width: 500px;
+}
+
+#MovingShapeText{
+    height: auto;
+    width: 500px;
+    /* background-color: #7E585E;  */
+}
+
+#MovingShapeText > p{
+    margin-left: 10px;
+    margin-right: 35px;
+}
+/* END VECTOR SPECIFIC CSS */
+/* END VECTOR SPECIFIC CSS */
+/* END VECTOR SPECIFIC CSS */
+
+
+
+
+
+/* HOME PAGE SPECIFIC CSS */
+/* HOME PAGE SPECIFIC CSS */
+/* HOME PAGE SPECIFIC CSS */
+#HomePageHeader{
+    background-image: url("Images/HeaderBG.png");
+    
+    background: rgb(47,47,47);
+    /* background: linear-gradient(90deg, rgba(47,47,47,1) 0%, rgba(20,20,20,1) 25%, rgba(20,20,20,1) 75%, rgba(47,47,47,1) 100%);    */
+    background-image: url("HomePage/Images/MegaBG.png");
+    background-size: cover;
+    display: flex;
+    /* justify-content:space-around; */
+    /* align-items: center; */
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+
+}
+
+
+
+#HomePageHeader > a{
+    /* border: ; */
+    margin: auto;
+    color: white;
+    font-family: t26-carbon, monospace;
+    font-size: 25px;
+    line-height: 30px;
+    /* border: 2px solid; */
+}
+
+
+#HomePageHeader >a:hover{
+    text-shadow: 0px 0px 10px rgb(194, 211, 255);
+    text-shadow: 0px 0px 10px rgb(12, 76, 236);
+}
+
+#MetalDivider{
+    display: flex;
+    height: 20px;
+    /* background-image: url("../Images/MetalDivider.png"); */
+    background-image: url("Images/MetalDivider.png");
+}
+/* END OF HOME PAGE SPECIFIC CSS */
+/* END OF HOME PAGE SPECIFIC CSS */
+/* END OF HOME PAGE SPECIFIC CSS */
+
+/* BLEND MODE SPECIFIC CSS */
+/* BLEND MODE SPECIFIC CSS */
+/* BLEND MODE SPECIFIC CSS */
+#BlendDemo1{
+    width: 100%;
+    height: 500px;
+}
+#BlendDemo2{
+    width: 100%;
+    height: 500px;
+}
+/* END OF BLEND MODE SPECIFIC CSS */
