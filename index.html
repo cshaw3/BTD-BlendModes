@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<title>BTD - Blend Modes</title>
+<meta charset="utf-8">
+<script src="p5.min.js"></script>
+<!-- <script src="../p5.min.js"></script> -->
+<script src="BlendSketch.js"></script>
+<link href="../Styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/nnv2tdn.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon7.png">
+</head>
+
+
+<body>
+    <div id="videoContainer"></div>
+    <div id="videoDivider"></div>
+    <div id="InfoContainer">
+        <div id="LeftCol"></div>
+
+        <div id="CenterCol">
+            
+            <div class="infoBlock">
+                <div class="textBlock">
+                    <h1>Blend Modes</h1>
+                    <h2>What are they?</h2>
+                    <p>Images on the computer are made up of tiny little dots of light called pixels. Pixels themselves can’t be any color they are actually made up of three sub pixels that are red blue and green. By combining these pixels showing different levels of red, green, and blue any color can be created. Pixels can do more than display an image, these colors can then be manipulated and altered to change what color they are displaying. One common way of manipulating the color a pixel displays are blend modes. Two colors cannot occupy the same pixel and only one can be displayed at a time, however with blend modes you can take the two colors that want to occupy the same space and combine them in unique ways. The way two pixels can be combined as by doing math with RGB components which is a 3D Vector (LINK!) It also compares them pixel by pixel</p>
+                </div>
+                <div id="InteractiveBlock1">
+                    <div id="BlendDemo1"></div>
+                </div>
+            </div>
+
+            <div class="infoBlock">
+                <div class="textBlock">
+                    <h1>Blending techniques.</h1>
+                    <h2>Pixel Math.</h2>
+                    <p>There is a myriad of blending modes but on a base level a lot of them do similar things with slight variations. The two main components a blend mode looks at to alter a pixel are its color, and luminosity(brightness) The color that is on top is called the base color, the color bellow is called the blend color, the result of blending these two colors together is called the blend color. Some common blend modes are, Darken, Lighten, Multiply, and Overlay. The darken effect compares how bright the blend layer is with the base layer if the color on the base layer is brighter than the color on the blend layer it’s made fully transparent if its dark then it is shown. .if a pixel from the top picture is darker than the pixel bellow it is is blended, if it is lighter it is made completely transparent, this makes it so the resulting blended image is always darker. One of the most used blend modes is Multiply and just like darken the resulting blended image will always be darker. But instead of comparing the two and only keeping darker pixels it multiplies the brightness value of the top and the bottom. What does this mean? Well you can think of brightness as a number from 0 to 1, where 0 is pure black and 1 is not only pure white but can be any color at its brightest. What multiply does is specified right in its name, it takes these two values and multiplies them. And this always makes the resulting image darker unless every pixel on the top layer has a 1 for brightness in which the top image will become entirely transparent revealing the bottom layer unchanged.</p>
+                </div>
+                <div id="InteractiveBlock2">
+                    <div id="BlendDemo2"></div>
+                </div>
+                </div>
+                <div class="InfoBlock"></div>
+                
+                <div class="textBlock" style="width:100%; padding-right: 10rem;">
+                    <h1>Common uses</h1>
+                    <h2>Texture and depth</h2>
+                    <p>So what’s the use for blend modes? Well, the thing about blend modes is there is no rules on how to use them, while its true some blend modes perform better than others if you have a specific goal in mind, it’s up the artist to decide what blend mode is best for their project. With that out the way let’s look at some common ways blend modes are used. One of the most common   </p>
+                </div>
+        </div>
+
+        <div id="RightCol"></div>
+        
+        
+
+    </div>
+
+    <div id="MetalDivider"></div>
+    <div id="bottomNav">
+		<a style="padding-right: 43vw;"; href="../VectorSite/vector.html">&#8592;PREV </a>
+		<a href="../BezierSite/BezierSite.html"> NEXT&#8594; </a>
+	</div>
+    <div id="MetalDivider"></div>
+
+</body>
+
+</html>
