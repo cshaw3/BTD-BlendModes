@@ -67,8 +67,10 @@
         sketch.setup = () => {
           // console.log("Its on");
             var width = document.getElementById('LeftCol').offsetWidth+1;
-            var height = document.getElementById('CenterCol').offsetHeight
+            var height = document.getElementById('CenterCol').offsetHeight;
             sketch.createCanvas(width, height, sketch.WEBGL);
+                
+                
             // sketch.createCanvas(width, height);
 
             //instantiate shapes
