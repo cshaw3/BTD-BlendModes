@@ -13,8 +13,10 @@
 
 
 <body>
-    <div id="videoContainer"></div>
-    <div id="videoDivider"></div>
+	<video id = "bgVideo" width="1920" height="1080" autoplay loop muted>
+		<source src="Videos/BlendMotion.mp4" type="video/mp4">
+		</video>	
+	<div id="videoDivider"></div>
     <div id="InfoContainer">
         <div id="LeftCol"></div>
 
@@ -22,31 +24,37 @@
             
             <div class="infoBlock">
                 <div class="textBlock">
-                    <h1>Blend Modes</h1>
-                    <h2>What are they?</h2>
-                    <p>Images on the computer are made up of tiny little dots of light called pixels. Pixels themselves can’t be any color they are actually made up of three sub pixels that are red blue and green. By combining these pixels showing different levels of red, green, and blue any color can be created. Pixels can do more than display an image, these colors can then be manipulated and altered to change what color they are displaying. One common way of manipulating the color a pixel displays are blend modes. Two colors cannot occupy the same pixel and only one can be displayed at a time, however with blend modes you can take the two colors that want to occupy the same space and combine them in unique ways. The way two pixels can be combined as by doing math with RGB components which is a 3D Vector (LINK!) It also compares them pixel by pixel</p>
+                    <!-- <h1>Blend Modes</h1> -->
+                    <h2>What are Blend Modes?</h2>
+                    <p>Images on the computer are made up of tiny little dots of light called pixels. Pixels themselves can’t be any color they are actually made up of three sub pixels that are red blue and green. By combining these pixels showing different levels of red, green, and blue any color can be created. <p>Pixels can do more than display an image, these colors can then be manipulated and altered to change what color they are displaying. One common way of manipulating the color a pixel displays are blend modes. </p> <p> colors cannot occupy the same pixel and only one can be displayed at a time, however with blend modes you can take the two colors that want to occupy the same space and combine them in unique ways. The way two pixels can be combined as by doing math with RGB components which is a 3D Vector. It also compares them pixel by pixel</p>
                 </div>
-                <div id="InteractiveBlock1">
-                    <div id="BlendDemo1"></div>
+                <div class="InteractiveBorder">
+                    <div id="InteractiveBlock1" style="margin-top: 10;">
+                        <div id="BlendDemo1"></div>
+                    </div>
+                    <p class="explainerTextWide">In this demo you can change the colors of the two squares along with changing what blend mode is applied. Try changing these values to see how different blend modes effect different shades and values.</p>	
                 </div>
             </div>
-
+            <div class="SpaceMaker" style="height: 200px"></div>
             <div class="infoBlock">
                 <div class="textBlock">
-                    <h1>Blending techniques.</h1>
-                    <h2>Pixel Math.</h2>
-                    <p>There is a myriad of blending modes but on a base level a lot of them do similar things with slight variations. The two main components a blend mode looks at to alter a pixel are its color, and luminosity(brightness) The color that is on top is called the base color, the color bellow is called the blend color, the result of blending these two colors together is called the blend color. Some common blend modes are, Darken, Lighten, Multiply, and Overlay. The darken effect compares how bright the blend layer is with the base layer if the color on the base layer is brighter than the color on the blend layer it’s made fully transparent if its dark then it is shown. .if a pixel from the top picture is darker than the pixel bellow it is is blended, if it is lighter it is made completely transparent, this makes it so the resulting blended image is always darker. One of the most used blend modes is Multiply and just like darken the resulting blended image will always be darker. But instead of comparing the two and only keeping darker pixels it multiplies the brightness value of the top and the bottom. What does this mean? Well you can think of brightness as a number from 0 to 1, where 0 is pure black and 1 is not only pure white but can be any color at its brightest. What multiply does is specified right in its name, it takes these two values and multiplies them. And this always makes the resulting image darker unless every pixel on the top layer has a 1 for brightness in which the top image will become entirely transparent revealing the bottom layer unchanged.</p>
+                    <h2>Blending techniques.</h2>
+                    <!-- <h2>Pixel Math.</h2> -->
+                    <p>There is a myriad of blending modes but on a base level a lot of them do similar things with slight variations. The two main components a blend mode looks at to alter a pixel are its color, and luminosity(brightness) The color that is on top is called the base color, the color bellow is called the blend color, the result of blending these two colors together is called the blend color.</p> <p> Some common blend modes are, Darken, Lighten, Multiply, and Overlay. The darken effect compares how bright the blend layer is with the base layer if the color on the base layer is brighter than the color on the blend layer it’s made fully transparent if its dark then it is shown. .if a pixel from the top picture is darker than the pixel bellow it is is blended, if it is lighter it is made completely transparent, this makes it so the resulting blended image is always darker. One of the most used blend modes is Multiply and just like darken the resulting blended image will always be darker. But instead of comparing the two and only keeping darker pixels it multiplies the brightness value of the top and the bottom.</p> <p>What does this mean? Well you can think of brightness as a number from 0 to 1, where 0 is pure black and 1 is not only pure white but can be any color at its brightest. What multiply does is specified right in its name, it takes these two values and multiplies them. And this always makes the resulting image darker unless every pixel on the top layer has a 1 for brightness in which the top image will become entirely transparent revealing the bottom layer unchanged.</p>
                 </div>
-                <div id="InteractiveBlock2">
-                    <div id="BlendDemo2"></div>
+                <div class="InteractiveBorder">
+                    <div id="InteractiveBlock2">
+                        <div id="BlendDemo2"></div>
+                    </div>
+                    <p class="explainerTextWide">This demo lets you select two different images and a blend mode. Notice that if you choose the same image twice some blend modes will still have an effect. Try choosing different images and play with the blend modes, notice how color and contrast have different effects with different images and blend modes.</p>	
                 </div>
                 </div>
-                <div class="InfoBlock"></div>
-                
-                <div class="textBlock" style="width:100%; padding-right: 10rem;">
-                    <h1>Common uses</h1>
-                    <h2>Texture and depth</h2>
-                    <p>So what’s the use for blend modes? Well, the thing about blend modes is there is no rules on how to use them, while its true some blend modes perform better than others if you have a specific goal in mind, it’s up the artist to decide what blend mode is best for their project. With that out the way let’s look at some common ways blend modes are used. One of the most common   </p>
+                <!-- <div class="InfoBlock"></div> -->
+                <div class="SpaceMaker" style="height: 80px"></div>
+                <div class="textBlock">
+                    <!-- <h1>Common uses</h1> -->
+                    <h2>Common Uses for Blend Modes.</h2>
+                    <p>So what’s the use for blend modes? Well, the thing about blend modes is there is no rules on how to use them, while its true some blend modes perform better than others if you have a specific goal in mind, it’s up the artist to decide what blend mode is best for their project. With that out the way let’s look at some common ways blend modes are used. </p><p> One possible use for blend modes is to alter the color of a scene, by taking some color overlay and applying a blend mode to it you can dramatically change how an image looks. Another use is adding texture, by taking an image texture that resembles something like paper or metal or really anything you can apply a blend mode to the texture and image bellow will look like it’s made out of the texture. This is great for taking clean digital images and making them seem like they were drawn or printed on sort other sort of material like a heavy weight paper, blend modes like overlay and multiply are great for this effect.</p> <p> Another use for blend modes is getting rid of a black background. Blend modes like screen will make all black pixels transparent this is great if you want to add something to an image but it has a black background, instead of deleting the background you can just set the blend mode to screen.</p>
                 </div>
         </div>
 
